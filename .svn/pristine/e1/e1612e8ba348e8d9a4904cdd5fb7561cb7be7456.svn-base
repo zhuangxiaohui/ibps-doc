@@ -1,0 +1,15 @@
+{
+  "name": "ibps-doc",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev doc",
+    "build": "vuepress build doc"
+  },
+  "author": "Hugh zhuang<zhuangxh@bpmhome.cn>",
+  "homepage": "http://doc.bpmhome.cn",
+  "dependencies": {
+    "vuepress": "^0.14.11"
+  }
+}

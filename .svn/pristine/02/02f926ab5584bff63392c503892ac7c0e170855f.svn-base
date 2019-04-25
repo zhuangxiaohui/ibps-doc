@@ -1,0 +1,76 @@
+
+var sidebar = require(`./sidebar`)
+var { sideBarGuide } = sidebar
+
+module.exports = {
+  locales :{
+  '/': {
+    lang: 'zh-CN',
+    title: 'IBPS平台',
+    description: 'IBPS快速开发平台，采用领先的“领域驱动架构设计”统一分层架构，降低框架藕合度，提高系统灵活性。核心功能包括代码生成管理、表单设计器、工作流引擎、移动审批、报表工具。'
+  },
+  '/en/': {
+    lang: 'en-US',
+    title: 'IBPS平台',
+    description: ''
+  }
+  }, head :[
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    //百度推广
+    ['script', {}, 'var _hmt = _hmt || []; (function() { var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?7debe2caf88a562e64df244cea73139f";var s = document.getElementsByTagName("script")[0];  s.parentNode.insertBefore(hm, s);})();']
+  ],
+  themeConfig : {
+    // 项目仓库地址
+    repo: '',
+    // 文档仓库地址
+    docsRepo: '',
+    // 文档不是放在仓库的根目录下
+    docsDir: 'doc',
+    // 默认是 false, 设置为 true 来启用
+    editLinks: true,
+    // 多国语言
+    locales: {
+      '/': {
+        selectText: '语言',
+        label: '简体中文',
+        editLinkText: '编辑此页',
+        lastUpdated: '最后更新',
+        nav: [
+          {
+            text: '用户手册',
+            link: '/zh/guide/'
+            // items: [
+            //   { text: '表单工具', link: '/zh/guide/form/' },
+            //   { text: '流程设计', link: '/zh/guide/bpmn/' }
+            // ]
+          },
+          {
+            text: '其它',
+            items: [
+              {
+                text: '关注我们',
+                items: [
+                  { text: '官网', link: 'http://www.bpmhome.cn' },
+                  { text: '论坛', link: 'http://bbs.bpmhome.cn' },
+                  { text: '微信公众号', link: '' },
+                  { text: '交流群', link: '' }
+                ]
+              },
+            ]
+          },
+          { text: '常见问题', link: '/zh/question/' }
+        ],
+        sidebar: {
+          '/zh/guide': sideBarGuide(),
+        }
+      },
+      '/en': {
+        selectText: 'Languages',
+        label: 'English',
+        editLinkText: 'Edit this page',
+        lastUpdated: 'Last update'
+      },
+    }
+  }
+}
+

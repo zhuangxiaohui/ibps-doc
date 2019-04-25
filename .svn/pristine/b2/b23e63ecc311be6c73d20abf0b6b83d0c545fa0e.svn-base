@@ -1,0 +1,17 @@
+ function sideBarHelpForm () {
+    return [
+      {
+        collapsable: false,
+        children: [
+          '',
+          'getting-started'
+        ]
+      }
+    ]
+}
+
+
+
+module.exports = {
+  sideBarHelpForm
+}

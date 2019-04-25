@@ -1,0 +1,16 @@
+---
+home: true
+heroImage: /home.png
+actionText: 了解更多 →
+actionLink: /zh/guide/
+features:
+- title: 可视化表单配置
+  details: 表单权限、规则、布局、校验、打印模板轻松配置。
+- title: 代码生成
+  details: 快捷生成查询、页面、后台逻辑等代码。
+- title: 可视化表单配置
+  details: 表单权限、规则、布局、校验、打印模板轻松配置。
+- title: 代码生成
+  details: 快捷生成查询、页面、后台逻辑等代码。
+footer: 2016-2019 @广州流辰信息技术有限公司版权所有.
+---

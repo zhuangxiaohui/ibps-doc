@@ -1,0 +1,18 @@
+ function sideBarGuide () {
+    return [
+      {
+        collapsable: false,
+        children: [
+          '',
+          'getting-started',
+          'form'
+        ]
+      }
+    ]
+}
+
+
+
+module.exports = {
+  sideBarGuide
+}
